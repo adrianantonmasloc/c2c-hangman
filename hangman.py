@@ -45,3 +45,33 @@ def draw_hangman(num_wrong_guesses):
         output = output + "\n |"
     output = output + "____\n\n"
     print(output)
+
+
+
+
+word = "test"
+guess = input("what's your letter").lower()
+num_wrong_guesses = 0
+letters_guessed = []
+num_right_guesses = 0
+right_guesses = []
+
+while num_wrong_guesses < num_wrong_guesses_allowed:
+    if guess in word:
+        print("yay")
+    else:
+        print("nope")
+        num_wrong_guesses += 1
+        draw_hangman(num_wrong_guesses)
+        letters_guessed.append(guesses)
+        print(letters_guessed)
+
+
+
+
+
+
+
+
+
+
